@@ -1,0 +1,14 @@
+@import "include-media";
+
+body {
+  margin: 0 auto;
+}
+
+.mainContainer {
+  width: 100%;
+  background-color: antiquewhite;
+
+  @include media('<tablet'){
+    background-color:red;
+  }
+}

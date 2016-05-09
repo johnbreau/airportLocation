@@ -1,0 +1,9 @@
+body {
+  margin: 0 auto; }
+
+.mainContainer {
+  width: 100%;
+  background-color: antiquewhite; }
+  @media (max-width: 767px) {
+    .mainContainer {
+      background-color: red; } }
