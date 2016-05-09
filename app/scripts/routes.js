@@ -11,7 +11,6 @@
       .when('/view1', {
         templateUrl: 'assets/views/view1.html',
         controller: 'viewOneController',
-        controllerAs: 'voCtrl'
       })
       .when('/view2', {
         templateUrl: 'assets/views/view2.html'

@@ -1,7 +1,9 @@
-module.controller('viewOneController', viewOneController);
+angular.module('airportLocation')
+.controller('viewOneController', viewOneController);
 
-  function viewOneController(scope) {
+  function viewOneController($scope) {
 
-  scope.tester = 'this is a tester';
+    $scope.tester = 'test this!';
+
 
   };
