@@ -1,9 +1,8 @@
 angular.module('airportLocation')
 .controller('viewOneController', viewOneController);
 
-  function viewOneController($scope) {
+  function viewOneController($scope, $http) {
 
-    $scope.tester = 'test this!';
-
+    $scope.promiseTester = 'test this!';
 
   };
