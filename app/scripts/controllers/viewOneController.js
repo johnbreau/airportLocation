@@ -5,7 +5,7 @@ angular.module('airportLocation')
 
     $scope.promiseTester = 'test this!';
 
-    var promise = new Promise(function(resolve, reject) {
+  var promise = new Promise(function(resolve, reject) {
     // do a thing, possibly async, then…
     var me = false;
 
@@ -17,4 +17,9 @@ angular.module('airportLocation')
     }
   });
 
+  promise.then(function(result) {
+    console.log(result); // "Stuff worked!"
+    }, function(err) {
+      console.log(err); // Error: "It broke"
+    });
   };
