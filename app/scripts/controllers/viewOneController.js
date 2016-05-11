@@ -5,8 +5,12 @@ angular.module('airportLocation')
 
     $scope.promiseTester = 'test this!';
 
+    $http.get("http://mysafeinfo.com/api/data?list=englishmonarchs&format=json", true).success(function(response){
+        $scope.responses = response;
+    })
+
   var promise = new Promise(function(resolve, reject) {
-    // do a thing, possibly async, then…
+
     var me = false;
 
     if (me === false) {
