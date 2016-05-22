@@ -4,6 +4,11 @@
   {{ promiseTester }}
 </p>
 
-<p ng-repeat="response in responses">
-  {{ response }}
-</p>
+<div ng-repeat="response in responses" class="responseTable">
+  <span class="clickClass" ng-click="kingBuilder()">
+    {{ response.cty }}
+  </span>
+  <span class="clickClass" ng-click="kingBuilder()">
+    {{ response.nm }}
+  </span>
+</div>

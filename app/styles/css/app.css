@@ -7,3 +7,25 @@ body {
   @media (max-width: 767px) {
     .mainContainer {
       background-color: red; } }
+
+.responseTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 75%;
+  background-color: tan;
+  margin: 10px auto;
+  border-radius: 40px; }
+
+.responseTable span {
+  border: 1px solid saddlebrown;
+  border-radius: 40px;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+  min-width: 50px;
+  text-align: center; }
+
+.responseTable span:hover {
+  background-color: saddlebrown;
+  color: antiquewhite; }

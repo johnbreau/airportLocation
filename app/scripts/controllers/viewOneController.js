@@ -3,8 +3,6 @@ angular.module('airportLocation')
 
   function viewOneController($scope, $http) {
 
-    $scope.promiseTester = 'test this!';
-
     $http.get("http://mysafeinfo.com/api/data?list=englishmonarchs&format=json", true).success(function(response){
         $scope.responses = response;
     })
@@ -26,4 +24,13 @@ angular.module('airportLocation')
     }, function(err) {
       console.log(err); // Error: "It broke"
     });
+
+    var myEl = angular.element(document.getElementsByClassName('clickerClass'));
+
+    $scope.kingBuilder = function() {
+      alert('hello booty!');
+    }
+
   };
+
+// http://api.census.gov/data/2014/acs1/variables.json
