@@ -10,10 +10,9 @@ angular.module('airportLocation')
     // ^^ this is the same as below in ES6 syntax
     // let myArray = Object.keys($scope.responses).map(key => $scope.responses[key]);
 
-    return myArray;
+    $scope.myArray = myArray;
+    console.log(myArray)
     })
-
-    console.log(myArray[0]);
 
     var myEl = angular.element(document.getElementsByClassName('clickerClass'));
 

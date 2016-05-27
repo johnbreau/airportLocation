@@ -19,12 +19,16 @@ body {
 
 .responseTable span {
   border: 1px solid saddlebrown;
-  border-radius: 40px;
-  margin: 5px;
+  border-radius: 25px;
+  margin: 5px auto;
   padding: 10px;
   cursor: pointer;
-  min-width: 50px;
+  min-width: 21%;
   text-align: center; }
+  @media (max-width: 767px) {
+    .responseTable span {
+      width: auto;
+      min-width: 0; } }
 
 .responseTable span:hover {
   background-color: saddlebrown;
