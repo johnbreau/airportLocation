@@ -6,7 +6,11 @@ body {
   background-color: antiquewhite; }
   @media (max-width: 767px) {
     .mainContainer {
-      background-color: red; } }
+      background-color: white; } }
+
+.centeredHeader {
+  text-align:center;
+}
 
 .responseTable {
   display: flex;

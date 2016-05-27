@@ -3,21 +3,19 @@ angular.module('airportLocation')
 
   function viewOneController($scope, $http) {
 
+    $scope.kingCollection = [];
+
     $http.get("http://mysafeinfo.com/api/data?list=englishmonarchs&format=json", true).success(function(response){
 
-    myArray = Object.keys(response).map(function (key) {return response[key]});
-
+    $scope.myArray = Object.keys(response).map(function (key) {return response[key]});
     // ^^ this is the same as below in ES6 syntax
     // let myArray = Object.keys($scope.responses).map(key => $scope.responses[key]);
-
-    $scope.myArray = myArray;
-    console.log(myArray)
     })
 
-    var myEl = angular.element(document.getElementsByClassName('clickerClass'));
-
     $scope.kingBuilder = function() {
-      alert('hello booty!');
+      var kingElement = event.target.innerHTML.trim("\n");
+      $scope.kingCollection.push(kingElement);
+      $scope.forDisplay = $scope.kingCollection.join(", ");
     }
 
   };
