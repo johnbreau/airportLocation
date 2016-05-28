@@ -9,8 +9,15 @@ body {
   background-color: antiquewhite;
 
   @include media('<tablet'){
-    background-color:red;
+    background-color:white;
   }
+}
+
+.centeredHeader {
+  text-align: center;
+  width:74%;
+  padding:5px;
+  margin-left: 13%;
 }
 
 .responseTable {

@@ -16,7 +16,10 @@ angular.module('airportLocation')
       var kingElement = event.target.innerHTML.trim("\n");
       $scope.kingCollection.push(kingElement);
       $scope.forDisplay = $scope.kingCollection.join(", ");
+      return $scope.forDisplay
     }
+
+    console.log($scope.forDisplay);
 
   };
 
