@@ -1,16 +1,16 @@
 <h1 class="centeredHeader">A Collection of Kings</h1>
   <p class="centeredHeader">Kings you like: &nbsp;<span>{{forDisplay}}</span></p>
   <div ng-repeat="item in myArray" class="responseTable">
-    <span class="clickClass" ng-click="kingBuilder()">
+    <div drag-me class="clickClass" ng-click="kingBuilder()">
       {{ item.cty }}
-    </span>
-    <span class="clickClass" ng-click="kingBuilder()">
+    </div>
+    <div drag-me class="clickClass" ng-click="kingBuilder()">
       {{ item.nm }}
-    </span>
-    <span class="clickClass" ng-click="kingBuilder()">
+    </div>
+    <div drag-me class="clickClass" ng-click="kingBuilder()">
       {{ item.hse }}
-    </span>
-    <span class="clickClass" ng-click="kingBuilder()">
+    </div>
+    <div drag-me class="clickClass" ng-click="kingBuilder()">
       {{ item.yrs }}
-    </span>
+    </div>
   </div>

@@ -23,8 +23,9 @@ body {
   margin: 10px auto;
   border-radius: 40px; }
 
-.responseTable span {
+.responseTable div {
   border: 1px solid saddlebrown;
+  background-color: tan;
   border-radius: 25px;
   margin: 5px auto;
   padding: 10px;
