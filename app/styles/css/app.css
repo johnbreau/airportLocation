@@ -11,10 +11,11 @@ body {
 .centeredHeader {
   text-align: center;
   width: 74%;
-  padding: 5px;
+  padding: 0;
   margin-left: 13%; }
 
 .responseTable {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -25,18 +26,25 @@ body {
 
 .responseTable div {
   border: 1px solid saddlebrown;
-  background-color: tan;
   border-radius: 25px;
+  background-color: tan;
   margin: 5px auto;
   padding: 10px;
   cursor: pointer;
   min-width: 21%;
   text-align: center; }
   @media (max-width: 767px) {
-    .responseTable span {
+    .responseTable div {
       width: auto;
       min-width: 0; } }
 
 .responseTable span:hover {
   background-color: saddlebrown;
   color: antiquewhite; }
+
+.targetContainer {
+  border: 1px solid saddlebrown;
+  border-radius: 35px;
+  height: auto;
+  padding: 10px;
+  margin-top: 10px; }
