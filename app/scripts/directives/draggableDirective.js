@@ -1,11 +1,12 @@
 angular.module('airportLocation').directive('dragMe', function() {
   return {
-    restrict: 'A',
-    controller: 'draggableController',
-    controllerAs: 'dragCtrl',
-    link: function(scope, elm, attrs) {
-      var options = scope.$eval(attrs.dragMe); //allow options to be passed in
-      elm.draggable(options);
+    // A = attribute, E = Element, C = Class and M = HTML Comment
+    restrict:'A',
+    //The link function is responsible for registering DOM listeners as well as updating the DOM.
+    link: function(scope, element, attrs) {
+      element.draggable({
+        revert:false
+      });
     }
   };
 });
