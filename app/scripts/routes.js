@@ -16,6 +16,11 @@
         templateUrl: 'assets/views/view2.html'
       })
 
+      .when('/view3', {
+        templateUrl: 'assets/views/view3.html'
+      })
+
+
       .otherwise({
         redirectTo: '/'
       });
